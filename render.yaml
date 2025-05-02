@@ -1,6 +1,12 @@
+# render.yaml
+
 services:
   - type: web
     name: superset
     env: docker
     plan: free
     autoDeploy: true
+    healthCheckPath: /
+    envVars:
+      - key: SUPERSET_SECRET_KEY
+        value: UANgblsBYk4cW9mvAFN07dFY1-9g72CGzEG6v78l13wFYGs_h3LWCoNyByn2YanEvXQex6vPjQgG0r5Yvhsu5A
