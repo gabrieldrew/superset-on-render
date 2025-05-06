@@ -15,9 +15,6 @@ RUN apt-get update && \
 # Restore default user
 USER superset
 
-# Superset Secret Key
-ENV SUPERSET_SECRET_KEY="UANgblsBYk4cW9mvAFN07dFY1-9g72CGzEG6v78l13wFYGs_h3LWCoNyByn2YanEvXQex6vPjQgG0r5Yvhsu5A"
-
 # Expose port for Render
 EXPOSE 8088
 
